@@ -311,9 +311,10 @@ qrc_wimaxcmguirc.o: qrc_wimaxcmguirc.cpp
 
 ####### Install
 
-install:   FORCE
+install:
+        cp wimaxcmgui /usr/bin -f
 
-uninstall:   FORCE
+uninstall:
+        rm /usr/bin/wimaxcmgui -f
 
-FORCE:
 
